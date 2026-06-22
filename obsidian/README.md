@@ -35,6 +35,7 @@ Small linked notes are easier to:
 Start with:
 
 - [[Motif]]
+- [[PRD - Motif Knowledge Graph]]
 - [[WooCommerce Engine]]
 - [[Semantic Mapping]]
 - [[RAG Strategy]]
@@ -47,3 +48,9 @@ Start with:
 Every major concept should become its own note.
 
 Every note should connect to at least one other note.
+
+## Head-To-Toes PRD
+
+The full Obsidian, RAG, chunking, indexing, and live graph product definition lives here:
+
+- [[PRD - Motif Knowledge Graph]]
