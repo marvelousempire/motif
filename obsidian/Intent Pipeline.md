@@ -7,6 +7,7 @@ related:
   - Idea Profile
   - Semantic Mapping
   - RAG Strategy
+  - Keyword Combos
 ---
 
 # Intent Pipeline
@@ -32,6 +33,45 @@ Intent
 → Application
 → Purpose
 → Validated Execution
+
+## Required Valid Intent
+
+Every Motif object must have a valid intent.
+
+This applies to:
+
+- Ideas
+- Features
+- Actions
+- Applications
+- Tools
+- Objects
+- Projects
+- Profiles
+
+A valid intent answers:
+
+- What is this trying to accomplish?
+- What change is this trying to create?
+- What result should this support?
+- Why does this deserve to exist?
+
+## Required Keyword Combo
+
+Every Motif object should also have at least one keyword combo.
+
+Keyword combos make objects easier to sort, search, tag, graph, and retrieve.
+
+Examples:
+
+- `#FinishReport`
+- `#MakeBread`
+- `#OpenDoor`
+- `#WetVacDry`
+- `#PythonAutomate`
+- `#LearnSkill`
+
+See [[Keyword Combos]].
 
 ## Stage 1: Intent
 
@@ -141,7 +181,7 @@ The system should be traceable in both directions.
 
 ## Motif Implication
 
-Every object inside Motif should eventually support this chain.
+Every object inside Motif should support this chain.
 
 Intent can become a first-class object.
 
@@ -157,6 +197,8 @@ Purpose can map to applications.
 
 Validation can map to purpose.
 
+Keyword combos can classify every node in the chain.
+
 ## Knowledge Graph View
 
 Intent
@@ -166,10 +208,12 @@ Intent
 │  │  │  ├─ Application
 │  │  │  │  ├─ Purpose
 │  │  │  │  │  └─ Validated Execution
+│  │  │  │  │     └─ Keyword Combos
 
 ## Related Notes
 
 - [[Motif]]
 - [[Semantic Mapping]]
 - [[Idea Profile]]
+- [[Keyword Combos]]
 - [[PRD - Motif Knowledge Graph]]
