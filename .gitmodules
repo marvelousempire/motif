@@ -1,0 +1,4 @@
+[submodule "vendor/agent-housekeeper"]
+	path = vendor/agent-housekeeper
+	url = https://github.com/marvelousempire/agent-housekeeper.git
+	branch = main
