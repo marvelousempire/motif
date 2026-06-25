@@ -20,11 +20,13 @@ Semantic Translation Layer
 Motif Experience
 ```
 
-## Why This Matters
+## Root Project Files
 
-WooCommerce already provides object storage, metadata, categories, tags, attributes, variations, inventory-like capacity fields, relationships, reviews, workflow actions, REST API support, WordPress admin integration, and a mature plugin ecosystem.
-
-Motif asks: what if those same fields could represent **ideas** instead of products?
+- [About](ABOUT.md)
+- [PRD](PRD.md)
+- [License](LICENSE)
+- [Repo Manifest](repo-manifest.md)
+- [Release Ledger](release-ledger.md)
 
 ## Intent Pipeline
 
@@ -48,10 +50,14 @@ Every Motif object should have at least one keyword combo.
 
 Motif includes a Housekeeper Agent system for keeping the repo organized and reusable.
 
+The Housekeeper must track README, ABOUT, PRD, LICENSE, releases, feature tickets, Obsidian notes, journals, docs, plugin code, tests, and repo structure.
+
 Start here:
 
 - [Housekeeper Agent](agents/housekeeper/README.md)
 - [Housekeeper Persona](agents/housekeeper/persona.md)
+- [Founder Operating Style](agents/housekeeper/founder-operating-style.md)
+- [Meticulous Stewardship](agents/housekeeper/meticulous-stewardship.md)
 - [Operating Manual](agents/housekeeper/operating-manual.md)
 - [Knowledge Sources](agents/housekeeper/knowledge-sources.md)
 - [Validation Guide](agents/housekeeper/validation.md)
@@ -76,6 +82,7 @@ Starter tickets:
 - [FEAT-0003 - Repo Transformation Guide](features/tickets/FEAT-0003-repo-transformation-guide.md)
 - [FEAT-0004 - Graceful Validation](features/tickets/FEAT-0004-graceful-validation.md)
 - [FEAT-0005 - Memory Log System](features/tickets/FEAT-0005-memory-log-system.md)
+- [FEAT-0006 - Meticulous Housekeeper](features/tickets/FEAT-0006-meticulous-housekeeper.md)
 
 ## Main Knowledge Links
 
@@ -114,7 +121,11 @@ Obsidian Sync Mode → Use WordPress and Obsidian together.
 ```text
 motif/
 ├── README.md
+├── ABOUT.md
 ├── PRD.md
+├── LICENSE
+├── repo-manifest.md
+├── release-ledger.md
 ├── docs/
 ├── obsidian/
 ├── agents/
