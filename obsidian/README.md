@@ -36,12 +36,17 @@ Start with:
 
 - [[Motif]]
 - [[PRD - Motif Knowledge Graph]]
+- [[Intent Pipeline]]
+- [[Motif Object Schema]]
+- [[Keyword Combos]]
+- [[Combo Types Roadmap]]
+- [[Feature Profile]]
+- [[Idea Profile]]
 - [[WooCommerce Engine]]
 - [[Semantic Mapping]]
 - [[RAG Strategy]]
 - [[Chunking Strategy]]
 - [[Indexing Strategy]]
-- [[Idea Profile]]
 
 ## Rule
 
@@ -49,8 +54,25 @@ Every major concept should become its own note.
 
 Every note should connect to at least one other note.
 
+Every Motif object must have a valid intent.
+
+Every Motif object should have at least one keyword combo.
+
 ## Head-To-Toes PRD
 
 The full Obsidian, RAG, chunking, indexing, and live graph product definition lives here:
 
 - [[PRD - Motif Knowledge Graph]]
+
+## Schema
+
+The required object structure lives here:
+
+- [[Motif Object Schema]]
+
+## Keyword System
+
+The tag and combo classification system lives here:
+
+- [[Keyword Combos]]
+- [[Combo Types Roadmap]]
