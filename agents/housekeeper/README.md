@@ -1,133 +1,85 @@
 ---
 type: agent-readme
-status: active
+status: local-mirror
 project: Motif
 agent: Housekeeper Agent
+source_standard: agent-housekeeper
 related:
-  - agents/housekeeper/system-prompt/README.md
-  - agents/housekeeper/persona.md
-  - agents/housekeeper/operating-manual.md
-  - agents/housekeeper/validation.md
-  - agents/housekeeper/repo-transformation-guide.md
-  - agents/housekeeper/meticulous-stewardship.md
-  - agents/housekeeper/founder-operating-style.md
+  - agents/housekeeper/housekeeper-source-manifest.md
+  - agents/housekeeper/external-repo-plan.md
 ---
 
-# Housekeeper Agent
+# Housekeeper Agent - Motif Local Mirror
 
 ## Purpose
 
-The Housekeeper Agent is the repo-aware assistant for Motif.
+This folder is the Motif-specific local mirror of the reusable Housekeeper standard.
 
-It acts like the founder's assistant for the project.
-
-It knows the room, the context, the decisions, the details, the reasons, the folders, the docs, the journals, the feature tickets, and the way the repo is supposed to grow.
-
-## First Read
-
-The agent should start here:
+The reusable standard lives in:
 
 ```text
-agents/housekeeper/system-prompt/
+agent-housekeeper
 ```
 
-First file:
+Motif keeps this local folder so the project can preserve Motif-specific context, rules, and links while still following the external Housekeeper pattern.
+
+## What This Folder Should Follow
+
+This local Motif Housekeeper should follow the rules, prompt order, templates, and repo-maintenance pattern from `agent-housekeeper`.
+
+Start with:
+
+```text
+agents/housekeeper/housekeeper-source-manifest.md
+agents/housekeeper/external-repo-plan.md
+```
+
+Then follow the local system prompt folder only when Motif-specific instructions are needed.
+
+## Local First Read
 
 ```text
 agents/housekeeper/system-prompt/00-core-system-prompt.md
-```
-
-Main order file:
-
-```text
 agents/housekeeper/system-prompt/01-firing-order.md
-```
-
-Machine-readable order:
-
-```text
 agents/housekeeper/system-prompt/firing-order.json
 ```
 
-## Core Role
+## Local Duty
 
-The Housekeeper Agent keeps the repo clean, useful, explainable, and ready for AI retrieval.
+Inside Motif, the Housekeeper must track:
 
-It should help maintain README, ABOUT, PRD, LICENSE, repo manifest, release ledger, feature tickets, Obsidian notes, journals, docs, plugin code, tests, and agent docs.
+- README.md
+- ABOUT.md
+- PRD.md
+- LICENSE
+- repo-manifest.md
+- release-ledger.md
+- features/ledger.md
+- features/tickets/
+- obsidian/
+- obsidian/journal/
+- docs/
+- plugin/
+- tests/
 
-## Main Phrase
+## Clean-Up Rule
 
-Keep the house clean.
+Do not let the Motif local mirror become the master standard.
 
-Keep the memory clear.
+The master standard is `agent-housekeeper`.
 
-Keep the repo ready.
+The Motif folder should only keep what Motif needs locally:
 
-## Meticulous Stewardship Rule
+- Source manifest
+- External repo plan
+- Motif-specific context
+- Motif-specific firing order overrides if needed
+- Motif-specific feature and journal links
 
-The Housekeeper Agent must treat the repo like a living system made of small cells.
+## Related Files
 
-Every file, field, note, feature, token, shortcode, release entry, and journal entry should have a place.
-
-If something important does not have a place, the Housekeeper should create one or propose one.
-
-## What The Agent Does
-
-The Housekeeper Agent should:
-
-1. Load the system prompt folder first.
-2. Follow the firing order.
-3. Read the repo before acting.
-4. Respect the project structure.
-5. Preserve the founder's intent.
-6. Turn conversations into docs.
-7. Turn ideas into feature tickets.
-8. Keep README files updated.
-9. Keep ABOUT updated.
-10. Keep PRD aligned with major changes.
-11. Keep the license present and visible.
-12. Keep the release ledger updated.
-13. Keep the repo manifest current.
-14. Keep Obsidian notes linked.
-15. Keep journals current.
-16. Keep feature tickets current.
-17. Validate changes gracefully.
-18. Avoid losing nuance.
-
-## Folder Map
-
-```text
-agents/housekeeper/
-├── README.md
-├── system-prompt/
-├── persona.md
-├── founder-operating-style.md
-├── meticulous-stewardship.md
-├── operating-manual.md
-├── knowledge-sources.md
-├── validation.md
-├── graceful-validation.md
-├── repo-transformation-guide.md
-├── agent-folder-template.md
-├── feature-ledger-guide.md
-└── templates/
-```
-
-## Related Systems
-
-The Housekeeper Agent works with:
-
-- [[Motif Object Schema]]
-- [[Intent Pipeline]]
-- [[Keyword Combos]]
-- [[Scenario Flows]]
-- [[Node Intent Philosophy]]
-- [[PRD - Motif Knowledge Graph]]
-
-## Reusable Pattern
-
-This agent structure should be reusable across other repos.
-
-A different project can copy the `agents/housekeeper` folder, then replace the project-specific details.
-
-That makes the Housekeeper Agent a modular repo management pattern.
+- agents/housekeeper/housekeeper-source-manifest.md
+- agents/housekeeper/external-repo-plan.md
+- README.md
+- repo-manifest.md
+- release-ledger.md
