@@ -15,7 +15,7 @@ It can track code releases, documentation releases, agent releases, structure re
 ## Current Version
 
 ```text
-v0.1.0-concept
+v0.1.1-housekeeper-submodule
 ```
 
 ## Release Types
@@ -29,12 +29,14 @@ v0.1.0-concept
 | plugin | WordPress plugin implementation update |
 | schema | Data or object schema update |
 | runtime | Architecture or runtime mode update |
+| structure | Repo structure or submodule update |
 
 ## Ledger
 
 | Version | Type | Summary | Status |
 | --- | --- | --- | --- |
 | v0.1.0-concept | concept | Initial Motif concept and knowledge structure. | active |
+| v0.1.1-housekeeper-submodule | structure | Added `agent-housekeeper` as a submodule standard and pruned duplicated local Housekeeper files. | active |
 
 ## Housekeeper Duty
 
@@ -46,4 +48,7 @@ Update this file when a major version, milestone, feature, structure, or agent c
 - ABOUT.md
 - repo-manifest.md
 - features/ledger.md
+- .gitmodules
+- docs/housekeeper-submodule-strategy.md
 - agents/housekeeper/README.md
+- agents/housekeeper/housekeeper-source-manifest.md
