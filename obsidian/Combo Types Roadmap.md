@@ -15,7 +15,7 @@ related:
 
 Combo Types Roadmap tracks the keyword combo families Motif may support.
 
-Keyword combos help classify ideas, features, tools, objects, actions, applications, and projects.
+Keyword combos help classify ideas, features, tools, objects, actions, applications, intents, and projects.
 
 ## Active Combo Types
 
@@ -81,31 +81,53 @@ Examples:
 
 Use PurposeGain when the main thing is value received.
 
-## 4. ObjectIntent
+## 4. ObjectIntentPurpose
 
-ObjectIntent connects an object to what the object is intended to do.
+ObjectIntentPurpose connects an object to what it should do and what purpose or focus it serves.
 
 Format:
 
 ```text
-#ObjectIntent
+#ObjectIntentPurpose
 ```
 
 Examples:
 
-- `#WetVacDry`
-- `#WetVacSoak`
-- `#ReportInform`
-- `#ChecklistVerify`
-- `#SpreadsheetOptimize`
+- `#DroneSurveyRoof`
+- `#PlannerOrganizeDay`
+- `#CameraInspireAudience`
+- `#WetVacDryFloor`
+- `#ScannerDigitizeReceipts`
+- `#ChecklistVerifySteps`
 
-Use ObjectIntent when the main thing is a specific object and its intended function.
+Use ObjectIntentPurpose when the main thing is a specific object, its intended action, and the target or purpose.
+
+## 5. IntentActivityFocus
+
+IntentActivityFocus connects the user's intent, the activity being performed, and the focus of that activity.
+
+Format:
+
+```text
+#IntentActivityFocus
+```
+
+Examples:
+
+- `#LearnPracticeGuitar`
+- `#ImproveBuildWebsite`
+- `#FinishWriteReport`
+- `#ResearchCompareTools`
+- `#OrganizeMapIdeas`
+- `#ProtectStoreRecords`
+
+Use IntentActivityFocus when the main thing is the intent, the activity, and where the effort is focused.
 
 ## Candidate Combo Types
 
 These combo types are not final yet, but they are strong candidates.
 
-## 5. TeamIntent
+## 6. TeamIntent
 
 TeamIntent connects a team, person, role, or group to the intent they serve.
 
@@ -125,7 +147,7 @@ Examples:
 
 Use TeamIntent when the main thing is who is doing the work and why.
 
-## 6. GoalObject
+## 7. GoalObject
 
 GoalObject connects a goal to the object the goal is working on.
 
@@ -144,7 +166,7 @@ Examples:
 
 Note: GoalObject can overlap with VerbNoun. It should only become separate if Motif needs a clearer goal-focused classification.
 
-## 7. PurposeResult
+## 8. PurposeResult
 
 PurposeResult connects the reason something exists to the final result it should create.
 
@@ -163,15 +185,38 @@ Examples:
 
 Note: PurposeResult may overlap with PurposeGain. PurposeGain is more user-received. PurposeResult is more system-produced.
 
+## Retired Combo Types
+
+## ObjectIntent
+
+ObjectIntent was the two-part version of ObjectIntentPurpose.
+
+Old format:
+
+```text
+#ObjectIntent
+```
+
+Old examples:
+
+- `#WetVacDry`
+- `#WetVacSoak`
+- `#ReportInform`
+- `#ChecklistVerify`
+
+Reason retired:
+
+ObjectIntentPurpose gives more detail by showing the object, the intent, and the purpose or focus.
+
 ## Recommended Top Three
 
 The strongest three combo types right now are:
 
 1. `#VerbNoun`
 2. `#ToolOutcome`
-3. `#ObjectIntent`
+3. `#ObjectIntentPurpose`
 
-PurposeGain remains important for value and benefit classification.
+PurposeGain and IntentActivityFocus remain important for value and intent classification.
 
 ## Naming Rule
 
@@ -181,8 +226,9 @@ Correct:
 
 ```text
 #MakeBread
-#WetVacDry
+#WetVacDryFloor
 #PythonAutomate
+#LearnPracticeGuitar
 ```
 
 Incorrect:
@@ -201,7 +247,8 @@ Choose the combo type based on what matters most:
 - If the action matters most, use VerbNoun.
 - If the tool matters most, use ToolOutcome.
 - If the user gain matters most, use PurposeGain.
-- If the object and its intended function matter most, use ObjectIntent.
+- If the object, its action, and its purpose matter most, use ObjectIntentPurpose.
+- If the intent, activity, and focus matter most, use IntentActivityFocus.
 - If the team or role matters most, consider TeamIntent.
 
 ## Related Notes
