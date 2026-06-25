@@ -3,6 +3,7 @@ type: source-manifest
 status: active
 project: Motif
 agent: Housekeeper Agent
+source_standard: agent-housekeeper
 ---
 
 # Housekeeper Source Manifest
@@ -11,72 +12,85 @@ agent: Housekeeper Agent
 
 This file tells Motif where its Housekeeper Agent standard comes from.
 
-Right now, the Housekeeper Agent lives locally inside this repo.
+Motif should not maintain a fully duplicated Housekeeper standard forever.
 
-The reusable standard is planned to live in its own repo named `agent-housekeeper`.
-
-## Current Source
+The reusable standard lives in:
 
 ```text
-Local source: agents/housekeeper/
+marvelousempire/agent-housekeeper
 ```
 
-## Future Source
+## Current Source Strategy
+
+Motif now uses a submodule-style source strategy.
+
+The external standard is configured in:
 
 ```text
-Future repo: agent-housekeeper
+.gitmodules
 ```
 
-## Relationship
-
-Motif should treat the local Housekeeper folder as the Motif-specific implementation.
-
-The future `agent-housekeeper` repo should become the reusable standard.
-
-## Expected External Repo Structure
+Submodule path:
 
 ```text
-agent-housekeeper/
-├── README.md
-├── ABOUT.md
-├── PRD.md
-├── LICENSE
-├── repo-manifest.md
-├── release-ledger.md
-├── agents/
-│   └── housekeeper/
-├── templates/
-├── examples/
-└── docs/
+vendor/agent-housekeeper
 ```
 
-## Motif Local Mirror
+Submodule URL:
 
-Motif keeps:
+```text
+https://github.com/marvelousempire/agent-housekeeper.git
+```
+
+## Local Mirror
+
+Motif still has a local folder:
 
 ```text
 agents/housekeeper/
 ```
 
-This local copy can include Motif-specific rules, links, and project context.
+This local folder should become a lightweight Motif-specific pointer and override layer, not a full duplicate of the standard.
 
-## Sync Rule
+## Intended Relationship
 
-When the external Housekeeper standard changes, Motif should review whether the local Housekeeper folder should be updated.
+```text
+agent-housekeeper = reusable master standard
+vendor/agent-housekeeper = submodule copy of master standard
+agents/housekeeper = Motif-specific notes, overrides, and pointers
+```
+
+## Local Folder Should Keep
+
+The local Motif folder should keep only:
+
+- Source manifest
+- External repo plan
+- Motif-specific context
+- Motif-specific links
+- Motif-specific overrides when needed
+
+## Local Folder Should Not Keep Long-Term
+
+The local Motif folder should not permanently duplicate the full Housekeeper standard once the submodule is fully active.
+
+## Migration Rule
+
+Do not delete the local folder until the submodule is fully active and Motif README, repo-manifest, and feature ledger are updated.
 
 ## Housekeeper Duty
 
 The Housekeeper Agent should check this source manifest when:
 
-- Updating its own instructions
+- Updating Housekeeper instructions
 - Creating a new project repo
 - Transforming another repo
-- Creating feature tickets for agent improvements
-- Updating the repo manifest
-- Updating the release ledger
+- Updating repo-manifest
+- Updating release-ledger
+- Reviewing duplicated files
 
 ## Status
 
-The external repo is planned under the name `agent-housekeeper`.
+Submodule configuration has been started in `.gitmodules`.
 
-Once created, add the actual repo URL here.
+The next cleanup step is to convert the local Motif Housekeeper folder into a lightweight pointer layer after confirming the submodule checkout works in a normal Git client.
