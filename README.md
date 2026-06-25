@@ -51,6 +51,63 @@ Motif asks: what if those same fields could represent **ideas** instead of produ
 | Cart | Collection |
 | Checkout | Submit / Support / Reserve / Fund |
 
+## Intent Pipeline
+
+Motif begins with intent.
+
+```text
+Intent
+→ Idea
+→ Feature
+→ Action
+→ Application
+→ Purpose
+→ Validated Execution
+```
+
+Every Motif object must have a valid intent.
+
+Every Motif object should have at least one keyword combo.
+
+## Keyword Combo Explainers
+
+Keyword Combos are smart hashtag labels that help Motif classify, sort, search, graph, and retrieve ideas, features, actions, tools, objects, and projects.
+
+Start here:
+
+- [Keyword Combos Explainer](obsidian/explainers/Keyword%20Combos%20Explainer.md)
+
+Current active combo explainers:
+
+- [VerbNoun Explainer](obsidian/explainers/VerbNoun%20Explainer.md)
+- [ToolOutcome Explainer](obsidian/explainers/ToolOutcome%20Explainer.md)
+- [PurposeGain Explainer](obsidian/explainers/PurposeGain%20Explainer.md)
+- [ObjectIntentPurpose Explainer](obsidian/explainers/ObjectIntentPurpose%20Explainer.md)
+- [IntentActivityFocus Explainer](obsidian/explainers/IntentActivityFocus%20Explainer.md)
+
+Example tags:
+
+```text
+#MakeBread
+#PythonAutomate
+#SaveTime
+#DroneSurveyRoof
+#LearnPracticeGuitar
+```
+
+## Obsidian Knowledge Layer
+
+Motif includes an Obsidian-friendly wiki layer inside the `obsidian/` folder.
+
+Important notes:
+
+- [Motif Object Schema](obsidian/Motif%20Object%20Schema.md)
+- [Intent Pipeline](obsidian/Intent%20Pipeline.md)
+- [Keyword Combos](obsidian/Keyword%20Combos.md)
+- [Combo Types Roadmap](obsidian/Combo%20Types%20Roadmap.md)
+- [Feature Profile](obsidian/Feature%20Profile.md)
+- [PRD - Motif Knowledge Graph](obsidian/PRD%20-%20Motif%20Knowledge%20Graph.md)
+
 ## What Motif Preserves
 
 - WooCommerce core database behavior
@@ -103,6 +160,12 @@ motif/
 │   ├── architecture.md
 │   ├── mappings.md
 │   └── glossary.md
+├── obsidian/
+│   ├── explainers/
+│   ├── Intent Pipeline.md
+│   ├── Keyword Combos.md
+│   ├── Motif Object Schema.md
+│   └── PRD - Motif Knowledge Graph.md
 ├── plugin/
 │   └── motif.php
 └── tests/
