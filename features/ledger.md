@@ -20,6 +20,7 @@ This ledger lists the first Motif feature tickets.
 | FEAT-0004 | Graceful Validation | Draft | Check work clearly without blocking progress. | tickets/FEAT-0004-graceful-validation.md |
 | FEAT-0005 | Memory Log System | Draft | Preserve project planning history as structured repo memory. | tickets/FEAT-0005-memory-log-system.md |
 | FEAT-0006 | Meticulous Housekeeper | Draft | Track every repo cell with exact stewardship. | tickets/FEAT-0006-meticulous-housekeeper.md |
+| FEAT-0007 | System Prompt Firing Order | Draft | Give the Housekeeper Agent a clear first-read instruction folder and ordered rule stack. | tickets/FEAT-0007-system-prompt-firing-order.md |
 
 ## Rule
 
