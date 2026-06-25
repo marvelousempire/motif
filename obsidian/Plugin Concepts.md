@@ -7,6 +7,7 @@ related:
   - Semantic Mapping
   - Motif Object Schema
   - Scenario Flows
+  - Language File AI Agent
 ---
 
 # Plugin Concepts
@@ -25,7 +26,7 @@ Motif can learn from several kinds of WordPress plugins and combine their best p
 
 Some WordPress plugins let a user translate labels, words, and phrases across a site.
 
-Motif can use this pattern to change the language of WooCommerce without changing the WooCommerce engine.
+Motif can use this pattern to change the language of WooCommerce or another plugin without changing the plugin engine.
 
 Example:
 
@@ -33,12 +34,60 @@ Example:
 - Cart becomes Collection
 - Reviews become Feedback
 - Attributes become Traits
+- Checkout becomes Submit Flow
+- Order becomes Support Record
 
 This supports the main Motif phrase:
 
 **Change the lens. Keep the engine.**
 
-## 2. Field Mapping Plugin Pattern
+## 2. Language File Pattern
+
+Many WordPress plugins separate visible language from internal function.
+
+That means menu items, labels, buttons, settings labels, and field names may be stored in language files or translation strings.
+
+Motif can use language files to make one plugin feel like a different plugin.
+
+Example:
+
+A commerce plugin can be made to feel like an idea system by changing the language layer:
+
+```text
+Product → Idea
+Products → Ideas
+Cart → Collection
+Checkout → Submit Flow
+Customer → Supporter
+Order → Support Record
+```
+
+The plugin still works like the original plugin underneath.
+
+The user sees a different experience.
+
+## 3. Language File AI Agent Pattern
+
+Motif can include a small specialized AI agent that understands plugin language files.
+
+This agent can help scan, map, rewrite, preview, and export language changes.
+
+The AI agent should specialize in:
+
+- POT files
+- PO files
+- MO files
+- JSON translation files
+- PHP label arrays
+- JavaScript translation strings
+- Admin menu labels
+- Button labels
+- Settings labels
+- Field labels
+
+See [[Language File AI Agent]].
+
+## 4. Field Mapping Plugin Pattern
 
 Some plugins let users upload files, match columns, and map those columns into WordPress fields.
 
@@ -60,7 +109,7 @@ name, summary, valid_intent, keyword_combos, status, pipeline_stage
 
 This turns external data into Motif nodes.
 
-## 3. Shortcode Token Pattern
+## 5. Shortcode Token Pattern
 
 WordPress shortcodes let users insert powerful behavior using simple tokens.
 
@@ -81,11 +130,13 @@ A small token can unlock a larger system.
 
 ## How These Patterns Work Together
 
-Motif can combine these three plugin patterns:
+Motif can combine these plugin patterns:
 
 1. Translation changes the visible language.
-2. Field mapping moves outside data into Motif.
-3. Shortcode tokens display or trigger Motif structures.
+2. Language files hold the plugin's visible words.
+3. A Language File AI Agent helps generate safe mappings.
+4. Field mapping moves outside data into Motif.
+5. Shortcode tokens display or trigger Motif structures.
 
 Together, they make Motif more than a label changer.
 
@@ -114,11 +165,39 @@ The user can display a node using a shortcode token.
 
 The user can also translate the interface so the system feels like an idea engine instead of a product store.
 
+## Example Plugin Re-Skin Flow
+
+A user installs a commerce plugin.
+
+The plugin works well, but the user does not want it to look like a store.
+
+They want it to look like a project intake system.
+
+Motif scans the plugin labels.
+
+The Language File AI Agent suggests mappings:
+
+```text
+Product → Project
+Cart → Intake List
+Checkout → Submit Request
+Order → Project Record
+Customer → Requester
+```
+
+The user previews the changes.
+
+The plugin still runs on the same engine.
+
+The visible UI now feels like a different product.
+
 ## Motif Implication
 
 Motif should eventually support:
 
 - Label translation
+- Language file mapping
+- AI-assisted translation file generation
 - Field mapping
 - File import
 - Shortcode tokens
@@ -135,3 +214,4 @@ Motif should eventually support:
 - [[Motif Object Schema]]
 - [[Scenario Flows]]
 - [[Intent Pipeline]]
+- [[Language File AI Agent]]
