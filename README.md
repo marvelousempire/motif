@@ -88,12 +88,14 @@ A group of related intents can begin forming a larger philosophy.
 Motif can be strengthened by patterns from common WordPress plugin types:
 
 - Translation plugins for changing visible labels
+- Language file systems for changing menu labels, button text, field labels, and UI wording
 - Field mapping plugins for uploading files and mapping columns into Motif fields
 - Shortcode token plugins for displaying or triggering Motif objects and flows with simple tokens
 
 Read more:
 
 - [Plugin Concepts](obsidian/Plugin%20Concepts.md)
+- [Language File AI Agent](obsidian/Language%20File%20AI%20Agent.md)
 
 ## Scenario Flows
 
@@ -147,6 +149,7 @@ Important notes:
 - [Combo Types Roadmap](obsidian/Combo%20Types%20Roadmap.md)
 - [Feature Profile](obsidian/Feature%20Profile.md)
 - [Plugin Concepts](obsidian/Plugin%20Concepts.md)
+- [Language File AI Agent](obsidian/Language%20File%20AI%20Agent.md)
 - [Scenario Flows](obsidian/Scenario%20Flows.md)
 - [Node Intent Philosophy](obsidian/Node%20Intent%20Philosophy.md)
 - [PRD - Motif Knowledge Graph](obsidian/PRD%20-%20Motif%20Knowledge%20Graph.md)
@@ -226,6 +229,7 @@ motif/
 │   ├── Keyword Combos.md
 │   ├── Motif Object Schema.md
 │   ├── Plugin Concepts.md
+│   ├── Language File AI Agent.md
 │   ├── Scenario Flows.md
 │   ├── Node Intent Philosophy.md
 │   └── PRD - Motif Knowledge Graph.md
