@@ -11,7 +11,7 @@ related:
 
 # Keyword Combos
 
-Keyword Combos are compact labels that classify an idea, feature, action, object, tool, or project.
+Keyword Combos are compact labels that classify an idea, feature, action, object, tool, project, or intent.
 
 They are designed to be easy to sort, search, tag, graph, and retrieve.
 
@@ -34,7 +34,8 @@ Examples:
 - `#OpenDoor`
 - `#FinishReport`
 - `#ResearchThings`
-- `#WetVacDry`
+- `#DroneSurveyRoof`
+- `#LearnPracticeGuitar`
 
 ## Combo Type 1: VerbNoun
 
@@ -114,29 +115,69 @@ Examples:
 - `#ReduceWaste`
 - `#IncreaseClarity`
 
-## Combo Type 4: ObjectIntent
+## Combo Type 4: ObjectIntentPurpose
 
-ObjectIntent connects an object to what the object is intended to do.
+ObjectIntentPurpose is a three-part combo.
+
+It connects an object to what it should do and the purpose or focus it serves.
 
 It combines:
 
 - Object = the thing, tool, document, system, or item
 - Intent = the intended action or effect
+- Purpose = the target, reason, or focus
 
 Format:
 
 ```text
-#ObjectIntent
+#ObjectIntentPurpose
 ```
 
 Examples:
 
-- `#WetVacDry`
-- `#WetVacSoak`
-- `#ReportInform`
-- `#CameraInspire`
-- `#SpreadsheetOptimize`
-- `#ChecklistVerify`
+- `#DroneSurveyRoof`
+- `#PlannerOrganizeDay`
+- `#CameraInspireAudience`
+- `#WetVacDryFloor`
+- `#ScannerDigitizeReceipts`
+- `#ChecklistVerifySteps`
+
+## Why ObjectIntentPurpose Replaces ObjectIntent
+
+The two-part ObjectIntent combo was useful, but it did not always show enough detail.
+
+ObjectIntentPurpose gives the full picture:
+
+- What object is involved?
+- What is it supposed to do?
+- What purpose or focus does that action serve?
+
+## Combo Type 5: IntentActivityFocus
+
+IntentActivityFocus is a three-part combo.
+
+It connects the user's intent, the activity being performed, and the focus of that activity.
+
+It combines:
+
+- Intent = what the user wants to accomplish
+- Activity = what the user is doing
+- Focus = where the effort is aimed
+
+Format:
+
+```text
+#IntentActivityFocus
+```
+
+Examples:
+
+- `#LearnPracticeGuitar`
+- `#ImproveBuildWebsite`
+- `#FinishWriteReport`
+- `#ResearchCompareTools`
+- `#OrganizeMapIdeas`
+- `#ProtectStoreRecords`
 
 ## Choosing the Best Combo
 
@@ -146,7 +187,9 @@ Use `#ToolOutcome` when the main thing is the tool being used.
 
 Use `#PurposeGain` when the main thing is the value received.
 
-Use `#ObjectIntent` when the main thing is an object and what it should do.
+Use `#ObjectIntentPurpose` when the main thing is an object, what it should do, and what it serves.
+
+Use `#IntentActivityFocus` when the main thing is the user's intent, the activity, and the focus.
 
 ## Valid Intent Requirement
 
@@ -168,12 +211,31 @@ valid_intent: Help the user complete reports faster and with less friction.
 keyword_combos:
   - FinishReport
   - SaveTime
-  - ChecklistVerify
+  - FinishWriteReport
 pipeline_stage: Feature
 related:
   - Intent Pipeline
   - PurposeGain
+  - IntentActivityFocus
 ```
+
+## Retired Combo Types
+
+### ObjectIntent
+
+ObjectIntent has been retired as an active combo type.
+
+Reason: ObjectIntentPurpose gives a fuller three-part picture.
+
+Old examples:
+
+- `#WetVacDry`
+- `#ReportInform`
+
+New examples:
+
+- `#WetVacDryFloor`
+- `#ReportInformTeam`
 
 ## Related Notes
 
