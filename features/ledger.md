@@ -18,7 +18,8 @@ This ledger lists the first Motif feature tickets.
 | FEAT-0002 | Feature Ledger | Draft | Track buildable ideas as small Markdown tickets. | tickets/FEAT-0002-feature-ledger.md |
 | FEAT-0003 | Repo Transformation Guide | Draft | Help any repo adopt the Motif-style structure. | tickets/FEAT-0003-repo-transformation-guide.md |
 | FEAT-0004 | Graceful Validation | Draft | Check work clearly without blocking progress. | tickets/FEAT-0004-graceful-validation.md |
-| FEAT-0005 | Journal Capture System | Draft | Preserve conversation memory as structured repo history. | tickets/FEAT-0005-journal-capture-system.md |
+| FEAT-0005 | Memory Log System | Draft | Preserve project planning history as structured repo memory. | tickets/FEAT-0005-memory-log-system.md |
+| FEAT-0006 | Meticulous Housekeeper | Draft | Track every repo cell with exact stewardship. | tickets/FEAT-0006-meticulous-housekeeper.md |
 
 ## Rule
 
