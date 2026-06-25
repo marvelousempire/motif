@@ -48,6 +48,17 @@ Start with:
 - [[Chunking Strategy]]
 - [[Indexing Strategy]]
 
+## Explainers
+
+The full plain-language explainers live here:
+
+- [[Keyword Combos Explainer]]
+- [[VerbNoun Explainer]]
+- [[ToolOutcome Explainer]]
+- [[PurposeGain Explainer]]
+- [[ObjectIntentPurpose Explainer]]
+- [[IntentActivityFocus Explainer]]
+
 ## Rule
 
 Every major concept should become its own note.
