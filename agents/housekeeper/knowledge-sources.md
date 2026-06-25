@@ -19,18 +19,24 @@ The agent should treat these as primary project memory:
 
 ```text
 README.md
+ABOUT.md
 PRD.md
+LICENSE
+repo-manifest.md
+release-ledger.md
 obsidian/
 obsidian/explainers/
 obsidian/journal/
 features/
+features/ledger.md
+features/tickets/
 agents/housekeeper/
 docs/
 plugin/
 tests/
 ```
 
-## What Each Source Means
+## Root Files
 
 ## README.md
 
@@ -38,11 +44,37 @@ The public front door of the repo.
 
 Use it to understand the high-level project, major links, and current structure.
 
+## ABOUT.md
+
+The identity file for the project.
+
+Use it to understand what Motif is, why it exists, and how it wants to think.
+
 ## PRD.md
 
 The product requirements document.
 
 Use it to understand project goals, scope, and requirements.
+
+## LICENSE
+
+The repo license.
+
+The Housekeeper should keep track that this file exists and remains visible.
+
+## repo-manifest.md
+
+The master inventory of important repo areas.
+
+Use it to know what must be monitored.
+
+## release-ledger.md
+
+The milestone and release memory.
+
+Use it to track major project states.
+
+## Knowledge Folders
 
 ## obsidian/
 
@@ -105,3 +137,11 @@ If information is missing, the agent should say what is missing and create a pla
 ## Journal Rule
 
 If a new idea changes the project, the agent should add a journal entry.
+
+## Release Rule
+
+If a change creates a milestone, version, or important project state, the agent should update the release ledger.
+
+## Manifest Rule
+
+If a new important file or folder is added, the agent should consider whether repo-manifest.md needs an update.
