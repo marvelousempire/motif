@@ -28,6 +28,18 @@ Motif Experience
 - [Repo Manifest](repo-manifest.md)
 - [Release Ledger](release-ledger.md)
 
+## Open Source Engine Strategy
+
+Motif uses WordPress, WooCommerce, and other already-built open-source systems because they save precious time and can be privately hosted.
+
+The goal is not to reinvent the wheel.
+
+The goal is to use strong existing engines, keep control, keep private hosting options, and build the Motif layer on top.
+
+Read more:
+
+- [Open Source Engine Strategy](obsidian/Open%20Source%20Engine%20Strategy.md)
+
 ## Intent Pipeline
 
 Motif begins with intent.
@@ -65,6 +77,20 @@ Start here:
 - [Repo Transformation Guide](agents/housekeeper/repo-transformation-guide.md)
 - [Agent Folder Template](agents/housekeeper/agent-folder-template.md)
 - [Feature Ledger Guide](agents/housekeeper/feature-ledger-guide.md)
+- [Housekeeper External Repo Plan](agents/housekeeper/external-repo-plan.md)
+- [Housekeeper Source Manifest](agents/housekeeper/housekeeper-source-manifest.md)
+
+## Future Agent-Housekeeping Repo
+
+The Housekeeper system is designed to become its own reusable repo.
+
+Planned repo name:
+
+```text
+agent-housekeeping
+```
+
+Motif will keep a local project-specific mirror while pointing to the external standard once that repo exists.
 
 ## Feature Ledger
 
@@ -93,6 +119,7 @@ Starter tickets:
 - [Feature Profile](obsidian/Feature%20Profile.md)
 - [Plugin Concepts](obsidian/Plugin%20Concepts.md)
 - [Language File AI Agent](obsidian/Language%20File%20AI%20Agent.md)
+- [Open Source Engine Strategy](obsidian/Open%20Source%20Engine%20Strategy.md)
 - [Scenario Flows](obsidian/Scenario%20Flows.md)
 - [Node Intent Philosophy](obsidian/Node%20Intent%20Philosophy.md)
 - [Custom Profile Types](obsidian/Custom%20Profile%20Types.md)
