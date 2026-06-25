@@ -13,7 +13,7 @@ This file tells Motif where its Housekeeper Agent standard comes from.
 
 Right now, the Housekeeper Agent lives locally inside this repo.
 
-In the future, the standard should live in its own reusable repo.
+The reusable standard is planned to live in its own repo named `agent-housekeeper`.
 
 ## Current Source
 
@@ -24,19 +24,19 @@ Local source: agents/housekeeper/
 ## Future Source
 
 ```text
-Future repo: agent-housekeeping
+Future repo: agent-housekeeper
 ```
 
 ## Relationship
 
 Motif should treat the local Housekeeper folder as the Motif-specific implementation.
 
-The future `agent-housekeeping` repo should become the reusable standard.
+The future `agent-housekeeper` repo should become the reusable standard.
 
 ## Expected External Repo Structure
 
 ```text
-agent-housekeeping/
+agent-housekeeper/
 ├── README.md
 ├── ABOUT.md
 ├── PRD.md
@@ -77,6 +77,6 @@ The Housekeeper Agent should check this source manifest when:
 
 ## Status
 
-The external repo is planned but not created from this session.
+The external repo is planned under the name `agent-housekeeper`.
 
 Once created, add the actual repo URL here.
