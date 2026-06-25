@@ -60,37 +60,32 @@ Every Motif object should have at least one keyword combo.
 
 ## Housekeeper Agent
 
-Motif includes a Housekeeper Agent system for keeping the repo organized and reusable.
+Motif uses the external `agent-housekeeper` repo as the reusable Housekeeper standard.
 
-The Housekeeper must track README, ABOUT, PRD, LICENSE, releases, feature tickets, Obsidian notes, journals, docs, plugin code, tests, and repo structure.
+The standard is mounted as a submodule at:
+
+```text
+vendor/agent-housekeeper
+```
+
+The local Motif folder is now only a lightweight pointer and override layer:
+
+```text
+agents/housekeeper
+```
 
 Start here:
 
-- [Housekeeper Agent](agents/housekeeper/README.md)
-- [Housekeeper Persona](agents/housekeeper/persona.md)
-- [Founder Operating Style](agents/housekeeper/founder-operating-style.md)
-- [Meticulous Stewardship](agents/housekeeper/meticulous-stewardship.md)
-- [Operating Manual](agents/housekeeper/operating-manual.md)
-- [Knowledge Sources](agents/housekeeper/knowledge-sources.md)
-- [Validation Guide](agents/housekeeper/validation.md)
-- [Graceful Validation](agents/housekeeper/graceful-validation.md)
-- [Repo Transformation Guide](agents/housekeeper/repo-transformation-guide.md)
-- [Agent Folder Template](agents/housekeeper/agent-folder-template.md)
-- [Feature Ledger Guide](agents/housekeeper/feature-ledger-guide.md)
-- [Housekeeper External Repo Plan](agents/housekeeper/external-repo-plan.md)
+- [Motif Housekeeper Pointer](agents/housekeeper/README.md)
 - [Housekeeper Source Manifest](agents/housekeeper/housekeeper-source-manifest.md)
+- [Housekeeper External Repo Plan](agents/housekeeper/external-repo-plan.md)
+- [Housekeeper Submodule Strategy](docs/housekeeper-submodule-strategy.md)
 
-## Future Agent-Housekeeper Repo
-
-The Housekeeper system is designed to become its own reusable repo.
-
-Planned repo name:
+Submodule source:
 
 ```text
-agent-housekeeper
+https://github.com/marvelousempire/agent-housekeeper.git
 ```
-
-Motif will keep a local project-specific mirror while pointing to the external standard once that repo exists.
 
 ## Feature Ledger
 
@@ -151,12 +146,15 @@ motif/
 ├── ABOUT.md
 ├── PRD.md
 ├── LICENSE
+├── .gitmodules
 ├── repo-manifest.md
 ├── release-ledger.md
 ├── docs/
 ├── obsidian/
 ├── agents/
-│   └── housekeeper/
+│   └── housekeeper/             # Motif-specific pointer layer
+├── vendor/
+│   └── agent-housekeeper/       # Git submodule standard
 ├── features/
 │   ├── ledger.md
 │   └── tickets/
