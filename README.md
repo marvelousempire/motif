@@ -6,6 +6,18 @@ Motif is a WordPress/WooCommerce semantic remapping project. It keeps WooCommerc
 
 WooCommerce focuses on products. Motif adds a translation layer so a product can be experienced as an idea, project, case, concept, initiative, or another structured object without breaking the underlying WooCommerce functionality.
 
+## Schema Alignment
+
+Motif follows the schema family:
+
+```text
+schema-gitrepo    = how this repo is structured
+schema-agent      = how agent layers are built
+agent-housekeeper = reusable Housekeeper agent standard
+```
+
+Motif uses `agent-housekeeper` as a submodule and keeps only Motif-specific Housekeeper notes in `agents/housekeeper`.
+
 ## Core Concept
 
 Motif does not rewrite WooCommerce.
@@ -166,4 +178,4 @@ motif/
 
 Motif is currently in concept and product-definition stage.
 
-Version: `v0.1.0-concept`
+Version: `v0.1.1-schema-aligned`
