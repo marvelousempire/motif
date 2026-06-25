@@ -26,6 +26,7 @@ Every major repo area should have a known purpose, owner, and maintenance expect
 | ABOUT.md | Project identity and meaning | Keep aligned with current vision |
 | PRD.md | Product requirements | Keep aligned with major product changes |
 | LICENSE | Legal license file | Preserve and monitor existence |
+| .gitmodules | Submodule configuration | Keep external standards linked correctly |
 | repo-manifest.md | Repo inventory | Keep current when structure changes |
 | release-ledger.md | Release memory | Keep current when versions or milestones change |
 
@@ -33,8 +34,9 @@ Every major repo area should have a known purpose, owner, and maintenance expect
 
 | Folder | Purpose | Housekeeper Duty |
 | --- | --- | --- |
-| agents/ | Agent definitions and playbooks | Keep agent instructions current |
-| agents/housekeeper/ | Housekeeper Agent system | Keep role, rules, and templates current |
+| agents/ | Agent definitions and playbooks | Keep local agent pointers and overrides current |
+| agents/housekeeper/ | Motif-specific Housekeeper pointer layer | Keep source manifest and Motif overrides current |
+| vendor/agent-housekeeper/ | External reusable Housekeeper standard | Follow as source standard once submodule is active |
 | docs/ | Product and engineering docs | Keep architecture and mapping docs organized |
 | features/ | Feature ledger and tickets | Keep feature list current |
 | features/tickets/ | Micro feature ticket files | Keep tickets small and linked |
@@ -52,6 +54,7 @@ The Housekeeper Agent should check these areas when the project changes:
 - ABOUT
 - PRD
 - LICENSE
+- `.gitmodules`
 - Repo Manifest
 - Release Ledger
 - Feature Ledger
@@ -61,7 +64,8 @@ The Housekeeper Agent should check these areas when the project changes:
 - Docs
 - Plugin Code
 - Tests
-- Agent Folder
+- Local Agent Folder
+- External Housekeeper Standard
 
 ## Meticulous Update Rule
 
@@ -75,6 +79,7 @@ When a new concept is added, the Housekeeper should ask:
 - Does Obsidian need a note?
 - Does the release ledger need a note?
 - Does repo-manifest need a new row?
+- Does `.gitmodules` or the submodule strategy need an update?
 
 ## Related Files
 
@@ -82,4 +87,5 @@ When a new concept is added, the Housekeeper should ask:
 - README.md
 - PRD.md
 - release-ledger.md
-- agents/housekeeper/meticulous-stewardship.md
+- docs/housekeeper-submodule-strategy.md
+- agents/housekeeper/housekeeper-source-manifest.md
