@@ -80,14 +80,14 @@ Start here:
 - [Housekeeper External Repo Plan](agents/housekeeper/external-repo-plan.md)
 - [Housekeeper Source Manifest](agents/housekeeper/housekeeper-source-manifest.md)
 
-## Future Agent-Housekeeping Repo
+## Future Agent-Housekeeper Repo
 
 The Housekeeper system is designed to become its own reusable repo.
 
 Planned repo name:
 
 ```text
-agent-housekeeping
+agent-housekeeper
 ```
 
 Motif will keep a local project-specific mirror while pointing to the external standard once that repo exists.
