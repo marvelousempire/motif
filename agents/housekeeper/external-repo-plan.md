@@ -16,19 +16,11 @@ This plan explains how the Housekeeper Agent can become its own reusable repo.
 
 The future repo can be used by Motif and by other projects that need the same housekeeper structure.
 
-## Future Repo Name
+## Repo Name
 
-Recommended repo name:
-
-```text
-agent-housekeeping
-```
-
-Alternative names:
+The repo name is:
 
 ```text
-housekeeper-agent
-repo-housekeeper
 agent-housekeeper
 ```
 
@@ -42,7 +34,7 @@ Other repos can then point to the same Housekeeper Agent system and learn how to
 
 ## What Moves To The New Repo
 
-These files should be copied or moved into the future `agent-housekeeping` repo:
+These files should be copied or moved into the `agent-housekeeper` repo:
 
 ```text
 agents/housekeeper/README.md
@@ -75,7 +67,7 @@ The local files should explain that Motif follows the external Housekeeper stand
 
 ## How Another Agent Uses It
 
-A new AI agent should be able to read the future `agent-housekeeping` repo and understand:
+A new AI agent should be able to read the `agent-housekeeper` repo and understand:
 
 - How to act as a Housekeeper Agent
 - How to inspect a repo
@@ -102,7 +94,7 @@ agents/housekeeper/housekeeper-source-manifest.md
 
 ## Migration Steps
 
-1. Create the new `agent-housekeeping` repo.
+1. Create the new `agent-housekeeper` repo.
 2. Copy the Housekeeper Agent folder into the new repo.
 3. Add a README for the new repo.
 4. Add a release ledger for the new repo.
