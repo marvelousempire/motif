@@ -69,6 +69,46 @@ Every Motif object must have a valid intent.
 
 Every Motif object should have at least one keyword combo.
 
+## Node-Based Engine
+
+Motif is a node-based engine.
+
+Everything is a node.
+
+The smallest meaningful node is intent.
+
+Intent is the microscopic cell of Motif.
+
+A group of related intents can begin forming a larger philosophy.
+
+- [Node Intent Philosophy](obsidian/Node%20Intent%20Philosophy.md)
+
+## Plugin-Powered Concepts
+
+Motif can be strengthened by patterns from common WordPress plugin types:
+
+- Translation plugins for changing visible labels
+- Field mapping plugins for uploading files and mapping columns into Motif fields
+- Shortcode token plugins for displaying or triggering Motif objects and flows with simple tokens
+
+Read more:
+
+- [Plugin Concepts](obsidian/Plugin%20Concepts.md)
+
+## Scenario Flows
+
+A Scenario Flow is a real-life scene that helps someone understand how Motif could fit into their life before they need a technical explanation.
+
+It helps a person say:
+
+```text
+Oh, wait. I can see how I would use that.
+```
+
+Read more:
+
+- [Scenario Flows](obsidian/Scenario%20Flows.md)
+
 ## Keyword Combo Explainers
 
 Keyword Combos are smart hashtag labels that help Motif classify, sort, search, graph, and retrieve ideas, features, actions, tools, objects, and projects.
@@ -106,7 +146,26 @@ Important notes:
 - [Keyword Combos](obsidian/Keyword%20Combos.md)
 - [Combo Types Roadmap](obsidian/Combo%20Types%20Roadmap.md)
 - [Feature Profile](obsidian/Feature%20Profile.md)
+- [Plugin Concepts](obsidian/Plugin%20Concepts.md)
+- [Scenario Flows](obsidian/Scenario%20Flows.md)
+- [Node Intent Philosophy](obsidian/Node%20Intent%20Philosophy.md)
 - [PRD - Motif Knowledge Graph](obsidian/PRD%20-%20Motif%20Knowledge%20Graph.md)
+
+## Project Journal
+
+Motif now includes a journal layer so the repo can preserve the thinking trail, not only the final polished documents.
+
+Start here:
+
+- [Conversation Journal - Motif Origin](obsidian/journal/Conversation%20Journal%20-%20Motif%20Origin.md)
+
+The journal should capture:
+
+- What was said
+- What was discovered
+- What changed
+- What concepts are still forming
+- What should be added next
 
 ## What Motif Preserves
 
@@ -162,9 +221,13 @@ motif/
 │   └── glossary.md
 ├── obsidian/
 │   ├── explainers/
+│   ├── journal/
 │   ├── Intent Pipeline.md
 │   ├── Keyword Combos.md
 │   ├── Motif Object Schema.md
+│   ├── Plugin Concepts.md
+│   ├── Scenario Flows.md
+│   ├── Node Intent Philosophy.md
 │   └── PRD - Motif Knowledge Graph.md
 ├── plugin/
 │   └── motif.php
