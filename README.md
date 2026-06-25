@@ -83,6 +83,19 @@ A group of related intents can begin forming a larger philosophy.
 
 - [Node Intent Philosophy](obsidian/Node%20Intent%20Philosophy.md)
 
+## Custom Types And Fields
+
+Motif can support both a full plugin-engine mode and a lighter native WordPress mode.
+
+The lighter mode can use custom profile types, custom post types, and custom fields to create a clean Motif system without needing every feature of a heavy plugin stack.
+
+Read more:
+
+- [Custom Profile Types](obsidian/Custom%20Profile%20Types.md)
+- [Custom Post Types](obsidian/Custom%20Post%20Types.md)
+- [Custom Fields](obsidian/Custom%20Fields.md)
+- [Lightweight WordPress Runtime](obsidian/Lightweight%20WordPress%20Runtime.md)
+
 ## Plugin-Powered Concepts
 
 Motif can be strengthened by patterns from common WordPress plugin types:
@@ -148,6 +161,10 @@ Important notes:
 - [Keyword Combos](obsidian/Keyword%20Combos.md)
 - [Combo Types Roadmap](obsidian/Combo%20Types%20Roadmap.md)
 - [Feature Profile](obsidian/Feature%20Profile.md)
+- [Custom Profile Types](obsidian/Custom%20Profile%20Types.md)
+- [Custom Post Types](obsidian/Custom%20Post%20Types.md)
+- [Custom Fields](obsidian/Custom%20Fields.md)
+- [Lightweight WordPress Runtime](obsidian/Lightweight%20WordPress%20Runtime.md)
 - [Plugin Concepts](obsidian/Plugin%20Concepts.md)
 - [Language File AI Agent](obsidian/Language%20File%20AI%20Agent.md)
 - [Scenario Flows](obsidian/Scenario%20Flows.md)
@@ -161,6 +178,7 @@ Motif now includes a journal layer so the repo can preserve the thinking trail, 
 Start here:
 
 - [Conversation Journal - Motif Origin](obsidian/journal/Conversation%20Journal%20-%20Motif%20Origin.md)
+- [Journal Update - Custom Types and Lean WordPress](obsidian/journal/Journal%20Update%20-%20Custom%20Types%20and%20Lean%20WordPress.md)
 
 The journal should capture:
 
@@ -196,16 +214,33 @@ The journal should capture:
 Motif may eventually support multiple semantic profiles:
 
 - Idea
+- Feature
+- Action
+- Application
 - Project
 - Case
 - Initiative
 - Opportunity
 - Research Item
 - Knowledge Record
+- Inventory
+- Repair
+- Workflow
 - Service
 - Membership
 
 Each profile becomes a different lens over the same engine.
+
+## Runtime Modes
+
+Motif can support more than one runtime path:
+
+```text
+Full Engine Mode → Use WooCommerce or another plugin as the base engine.
+Motif Native Mode → Use custom post types and custom fields as the base engine.
+Headless Mode → Use WordPress mainly as an API and admin backend.
+Obsidian Sync Mode → Use WordPress and Obsidian together.
+```
 
 ## Initial Goal
 
@@ -228,6 +263,10 @@ motif/
 │   ├── Intent Pipeline.md
 │   ├── Keyword Combos.md
 │   ├── Motif Object Schema.md
+│   ├── Custom Profile Types.md
+│   ├── Custom Post Types.md
+│   ├── Custom Fields.md
+│   ├── Lightweight WordPress Runtime.md
 │   ├── Plugin Concepts.md
 │   ├── Language File AI Agent.md
 │   ├── Scenario Flows.md
